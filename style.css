@@ -5,18 +5,18 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.nav-info {
+.info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.nav-info img {
+.info img {
   width: 100%;
 }
 
-.nav-info .more-info {
+.info .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +28,7 @@ body {
 
 }
 
-.wrapper {
+.todo-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
