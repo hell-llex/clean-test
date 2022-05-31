@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <header>
     <section class="info">
       <img class="info__image" src="./eisenhower-matrix.jpg" alt="">
@@ -18,40 +18,40 @@
   <main>
     <section class="todo-wrapper">
       <section id="add-element" class="todo-wrapper__add-element">
-        <label for="new-task">Add Item</label>
+        <label for="new-task" class="todo-wrapper__new-task-text">Add Item</label>
         <section class="todo-wrapper__task-wrapper">
-          <input id="new-task" class="todo-wrapper__task new-task" type="text">
-          <button>Add</button>
+          <input id="new-task" class="todo-wrapper__task todo-wrapper__new-task" type="text">
+          <button class="todo-wrapper__btn">Add</button>
         </section>
       </section>
       <section>
-        <h3>Todo</h3>
+        <h3 class="todo-wrapper__titel">Todo</h3>
         <ul id="incomplete-tasks" class="todo-wrapper__incomplete-tasks">
-          <li>
-            <input type="checkbox">
-            <label class="todo-wrapper__task">Pay Bills</label>
-            <input type="text" class="todo-wrapper__task">
-            <button class="todo-wrapper__edit-task">Edit</button>
-            <button class="todo-wrapper__delete-task"><img src="./remove.svg" alt="Delete button"></button>
+          <li class="item">
+            <input type="checkbox" class="todo-wrapper__checkbox">
+            <label class="todo-wrapper__task todo-wrapper__text">Pay Bills</label>
+            <input type="text" class="todo-wrapper__task todo-wrapper__input">
+            <button class="todo-wrapper__btn todo-wrapper__edit-task">Edit</button>
+            <button class="todo-wrapper__btn todo-wrapper__delete-task"><img class="todo-wrapper__delete-image" src="./remove.svg" alt="Delete button"></button>
           </li>
-          <li class="todo-wrapper__edit-mode">
-            <input type="checkbox">
-            <label class="todo-wrapper__task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="todo-wrapper__task">
-            <button class="todo-wrapper__edit-task">Save</button>
-            <button class="todo-wrapper__delete-task"><img src="./remove.svg" alt="Delete button"></button>
+          <li class="item todo-wrapper__edit-mode">
+            <input type="checkbox" class="todo-wrapper__checkbox">
+            <label class="todo-wrapper__task todo-wrapper__text">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo-wrapper__task todo-wrapper__input">
+            <button class="todo-wrapper__btn todo-wrapper__edit-task">Save</button>
+            <button class="todo-wrapper__btn todo-wrapper__delete-task"><img class="todo-wrapper__delete-image" src="./remove.svg" alt="Delete button"></button>
           </li>
         </ul>
       </section>
       <section>
-        <h3>Completed</h3>
+        <h3 class="todo-wrapper__titel">Completed</h3>
         <ul id="completed-tasks" class="todo-wrapper__completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="todo-wrapper__task">See the Doctor</label>
-            <input type="text" class="todo-wrapper__task">
-            <button class="todo-wrapper__edit-task">Edit</button>
-            <button class="todo-wrapper__delete-task"><img src="./remove.svg" alt="Delete button"></button>
+          <li class="item">
+            <input type="checkbox" class="todo-wrapper__checkbox"checked>
+            <label class="todo-wrapper__task todo-wrapper__text">See the Doctor</label>
+            <input type="text" class="todo-wrapper__task todo-wrapper__input">
+            <button class="todo-wrapper__btn todo-wrapper__edit-task">Edit</button>
+            <button class="todo-wrapper__btn todo-wrapper__delete-task"><img class="todo-wrapper__delete-image" src="./remove.svg" alt="Delete button"></button>
           </li>
         </ul>
       </section>
